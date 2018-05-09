@@ -9,6 +9,5 @@
   },
   "icons" : {
     "128": "icon.png"
-  },
-  "content_security_policy": "script-src 'self'"
+  }
 }
