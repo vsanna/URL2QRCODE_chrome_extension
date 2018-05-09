@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+html {
+    width: 380px;
+    height: 600px;
+}
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.form input {
+    padding: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 80px;
+    border: 1px solid lightgray;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.form input:focus,
+.form input:active {
+    outline: none;
+    border: 1px solid #167ca9;
+}
+
+
+.form img {
+  width: 80vw;
+  max-width: 300px;
+}
+</style>
+</head>
+<body>
+
+<div class="form">
+  <input type="text" id="url" placeholder='url ex. https://paymo.life'>
+
+  <div id="qr"></div>
+</div>
+
+<script src='./main.js'></script>
+</body>
+</html>
